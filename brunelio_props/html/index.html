@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciador de Props</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="prop-manager" class="container">
+        <h2 class="title-center">Gerenciador de Props</h2>
+        
+        <div class="form-group">
+            <label for="propName">Nome da Prop:</label>
+            <div class="prop-container">
+                <input type="text" id="propName" placeholder="Prop">
+                <button id="clearPropName" class="clear-button">Limpar</button>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <button id="removeNearestProp" class="remove-button">Remover Prop Próxima</button>
+        </div>
+        
+        <div class="form-group">
+            <label>Coordenadas para Spawn:</label>
+            <div class="coords-container">
+                <div class="coords-group">
+                    <input type="number" id="coordX" placeholder="X" step="0.01">
+                    <input type="number" id="coordY" placeholder="Y" step="0.01">
+                    <input type="number" id="coordZ" placeholder="Z" step="0.01">
+                </div>
+                <button id="clearCoords" class="clear-button">Limpar</button>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="heading">Rotação:</label>
+            <input type="number" id="heading" placeholder="Heading" step="0.1">
+        </div>
+        
+        <div class="buttons">
+            <button id="useCurrentPos">Usar Posição Atual</button>
+            <button id="spawnProp">Spawnar Prop</button>
+            <button id="close">Fechar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

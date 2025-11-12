@@ -1,0 +1,190 @@
+/* Reset e estilo base */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: none;
+    user-select: none;
+    overflow: hidden;
+    display: none;
+}
+
+/* Container principal com efeito "glass" e sombras suaves */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(15, 15, 15, 0.95);
+    padding: 25px 35px;
+    border-radius: 10px;
+    color: #fff;
+    width: 380px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Título central com tipografia moderna e sombra */
+.title-center {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Estilização dos grupos de formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Inputs com fundo semi-transparente e transição suave */
+input {
+    width: 100%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background: rgba(30, 30, 30, 0.9);
+    color: #fff;
+    font-size: 13px;
+    box-sizing: border-box;
+    height: 32px;
+}
+
+input:focus {
+    outline: none;
+    background: rgba(40, 40, 40, 0.9);
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.3);
+}
+
+/* Containers para propriedades e coordenadas com espaçamento aprimorado */
+.prop-container,
+.coords-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.coords-group {
+    display: flex;
+    gap: 12px;
+    flex: 1;
+}
+
+.coords-group input {
+    width: 100%;
+}
+
+/* Botões com gradientes modernos, animação de hover e sombra */
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+/* Botões com cores diferenciadas para ações específicas */
+.clear-button {
+    background: #ff4444;
+    padding: 6px 12px;
+    height: 32px;
+    min-width: 65px;
+    font-size: 11px;
+}
+
+#useCurrentPos {
+    background: #00b894;
+}
+
+#spawnProp {
+    background: #0984e3;
+}
+
+#close {
+    background: #ff4444;
+}
+
+/* Efeitos de hover específicos para os botões de ação */
+button:hover {
+    filter: brightness(110%);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Placeholder com cor suave */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* Tooltip para copiar informações */
+.copy-tooltip {
+    position: absolute;
+    background: #00c6ff;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin-top: 5px;
+}
+
+.copy-tooltip.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Exibição dos dados de coordenadas com efeito interativo */
+#currentCoords {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    cursor: pointer;
+    font-family: monospace;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+#currentCoords:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.remove-button {
+    background: #e74c3c;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    height: 36px;
+    font-size: 12px;
+    border-radius: 6px;
+}
+
+.remove-button:hover {
+    background: #c0392b;
+}
